@@ -1,14 +1,18 @@
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
+// import FindInPageRoundedIcon from "@material-ui/icons/FindInPageRounded";
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills " className="bg-white text-black">
       <div className="container px-5 py-10 mx-auto">
-        <div className="text-center mb-20">
-          <ChipIcon className="w-10 inline-block mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-green-400 mb-4">
+        <div className="text-center mb-10">
+          {/* <FindInPageRoundedIcon
+            className="text-green-400  mb-4"
+            fontSize="large"
+          /> */}
+
+          <h1 className="sm:text-4xl text-3xl font-medium title-font text-purple-700 my-8">
             Skills
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
@@ -17,14 +21,21 @@ export default function Skills() {
             possimus est.
           </p>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+
+        {/* Skills Card */}
+        <div className="grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4 ">
           {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
-                  {skill}
-                </span>
+            <div className="flex  p-4 dark:bg-gray-800  ">
+              <div className="justify-center p-3 mr-4 text-green-400 ">
+                <img alt="icon" className="w-12 h-12" src={skill.icon} />
+                <div>
+                  <p className="my-3 text-xl font-semibold text-black">
+                    {skill.title}
+                  </p>
+                  <p className="text-sm font-normal text-gray-900">
+                    {skill.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
