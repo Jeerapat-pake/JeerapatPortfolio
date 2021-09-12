@@ -4,11 +4,11 @@ import { projects } from "../data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-gray-400  body-font">
+    <section id="projects" className="text-black  body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4 text-purple-700" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-purple-700">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-6 text-purple-700">
             Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -17,7 +17,7 @@ export default function Projects() {
             fuga dolore.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        {/* <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
               href={project.link}
@@ -41,6 +41,30 @@ export default function Projects() {
                 </div>
               </div>
             </a>
+          ))}
+        </div> */}
+        <div className="flex flex-wrap -m-4">
+          {projects.map((project) => (
+            <div className="grid mb-8 flex items-center bg-gray-50 shadow-xl rounded-lg ">
+              <div className="grid md:grid-cols-1 lg:grid-cols-2 ">
+                <div className="p-12 mr-4">
+                  <p className="text-purple-800 my-4">{project.subtitle}</p>
+                  <p className="my-4 text-2xl font-semibold text-black">
+                    {project.title}
+                  </p>
+                  <p className="text-sm font-normal text-gray-900 my-4">
+                    {project.description}
+                  </p>
+                </div>
+                <div className="bg-gradient-to-r from-purple-500 to-purple-800 m-0 rounded-r-lg">
+                  <img
+                    src={project.image}
+                    alt="project list"
+                    className="p-10 "
+                  />
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
