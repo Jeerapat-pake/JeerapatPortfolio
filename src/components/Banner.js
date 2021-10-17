@@ -14,9 +14,9 @@ export default function Banner() {
             Business Analyst at PEA
           </h1>
           <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+            I am a Business Analyst, who collaborates closely with users, UX/UI
+            designer, and the developer team to clarify what is the business
+            solutions and the real user's needs
           </p>
           <div className="flex justify-center ">
             <a
@@ -26,7 +26,7 @@ export default function Banner() {
               Work With Me
             </a>
             <a
-              href="#"
+              href="#projects"
               className="ml-4 inline-flex  bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             >
               See My Portfolio

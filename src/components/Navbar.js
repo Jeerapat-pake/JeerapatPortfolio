@@ -3,13 +3,13 @@ import React from "react";
 
 export default function Navbar() {
   const navlists = [
-    { name: "Skills", href: "#" },
-    { name: "Project", href: "#" },
-    { name: "Contact Me", href: "#" },
+    { name: "Skills", href: "#skill" },
+    { name: "Project", href: "#projects" },
+    { name: "Contact Me", href: "#contact" },
   ];
 
   return (
-    <header className="bg-white md:sticky top-0 z-10">
+    <header className="bg-white md:sticky top-0 z-10 shadow-lg">
       <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
         <a className="title-font font-medium text-purple-800 mb-4 md:mb-0">
           <a href="#about" className="ml-3 text-xl">
