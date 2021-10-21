@@ -11,11 +11,6 @@ export default function Projects() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-6 text-purple-700">
             Projects
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
-          </p>
         </div>
         {/* <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
@@ -52,15 +47,26 @@ export default function Projects() {
                   <p className="my-4 text-2xl font-semibold text-black">
                     {project.title}
                   </p>
-                  <p className="text-sm font-normal text-gray-900 my-4">
-                    {project.description}
+                  <p className="text-sm font-normal text-gray-900 my-4 text-left">
+                    <ul>
+                      <li>
+                        {" "}
+                        - Co-creation project with Accenture within 100 days.
+                      </li>
+                      <li>
+                        - Creating a flowchart diagram to visualize the process
+                        of application.
+                      </li>
+                      <li>- Designing 1st draft User Interface.</li>
+                      <li>- Supporting SIT / UAT test.</li>
+                    </ul>
                   </p>
                 </div>
                 <div className="bg-gradient-to-r from-purple-500 to-purple-800 m-0 rounded-r-lg">
                   <img
                     src={project.image}
                     alt="project list"
-                    className="p-10 "
+                    className="p-8 rounded "
                   />
                 </div>
               </div>

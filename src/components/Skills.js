@@ -11,15 +11,11 @@ export default function Skills() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-purple-700 mb-6">
             Skills
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-            ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-            possimus est.
-          </p>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto"></p>
         </div>
 
         {/* Skills Card */}
-        <div className="grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4 ">
+        <div className="grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4 justify-center">
           {skills.map((skill) => (
             <div className="flex  p-4 dark:bg-gray-800  ">
               <div className="justify-center p-3 mr-4 text-green-400 ">

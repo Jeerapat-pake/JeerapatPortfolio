@@ -10,9 +10,8 @@ export default function Banner() {
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-8 font-medium ">
             Hi, I'm Jeerpat
-            <br className="hidden lg:inline-block" />
-            Business Analyst at PEA
           </h1>
+          <p className="font-bold text-lg">Business Analyst and UI Designer</p>
           <p className="mb-8 leading-relaxed">
             I am a Business Analyst, who collaborates closely with users, UX/UI
             designer, and the developer team to clarify what is the business
