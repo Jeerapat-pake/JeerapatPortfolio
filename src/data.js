@@ -2,12 +2,14 @@ export const projects = [
   {
     title: "Capital Project Management",
     subtitle: "BA, UI Desiger, Tester ",
-    description: `- Co-creation project with Accenture within 100 days.
-      - Creating Product backlog with Team.
-      - Creating a flowchart diagram to visualize the process of application.
-      - Creating Notification management.
-      - Designing 1st draft User Interface.
-      - Supporting SIT / UAT test.`,
+    description: [
+      "- Co-creation project with Accenture within 100 days.",
+      "- Creating Product backlog with Team.",
+      "- Creating a flowchart diagram to visualize the process of application.",
+      "- Creating Notification management.",
+      "- Designing 1st draft User Interface.",
+      "- Supporting SIT / UAT test.`",
+    ],
     image: "./CPM_Cover.png",
     link: "https://reactbootcamp.com",
   },

@@ -11,8 +11,8 @@ export default function Contact() {
             Contact Me
           </h1>
         </div>
-        <div className="grid grid-cols-2 ">
-          <div className=" bg-gray-900 rounded-md overflow-hidden  sm:mr-10 p-10 flex items-end justify-start relative">
+        <div className="grid lg:grid-cols-2 md:grid-col-1 ">
+          <div className=" bg-gray-900 rounded-md overflow-hidden  sm: p-10 flex items-end justify-start relative">
             <iframe
               width="100%"
               height="100%"
@@ -50,7 +50,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <img src="../5127314.jpg" />
           </div>
 
