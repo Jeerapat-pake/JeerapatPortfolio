@@ -16,7 +16,7 @@ function Navbar() {
                   alt="Logo"
                 />
               </div>
-              <div className="hidden lg:block justify-end">
+              <div className="hidden lg:block ">
                 <div className="ml-10 flex items-baseline space-x-4 ">
                   <a
                     href="#skills"

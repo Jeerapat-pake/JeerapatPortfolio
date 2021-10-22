@@ -4,11 +4,11 @@ import { projects } from "../data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-black  body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+    <section id="projects" className="text-black  body-font pt-10">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-16">
         <div className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4 text-purple-700" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-6 text-purple-700">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-purple-700">
             Projects
           </h1>
         </div>
@@ -38,9 +38,9 @@ export default function Projects() {
             </a>
           ))}
         </div> */}
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap ">
           {projects.map((project) => (
-            <div className="grid mb-8 flex items-center bg-gray-100 shadow-xl rounded-lg ">
+            <div className="grid mb-8 flex items-center bg-gray-100 shadow-xl rounded-lg md:mx-4">
               <div className="grid md:grid-cols-1 lg:grid-cols-2 ">
                 <div className="p-12 mr-4">
                   <p className="text-purple-800 my-4">{project.subtitle}</p>
@@ -65,11 +65,11 @@ export default function Projects() {
                     </ul>
                   </p>
                 </div>
-                <div className="bg-gradient-to-r from-purple-500 to-purple-800 m-0 rounded-r-lg">
+                <div className="bg-gradient-to-r from-purple-500 to-purple-800 m-0 rounded-r-lg flex">
                   <img
                     src={project.image}
                     alt="project list"
-                    className="p-8 rounded "
+                    className="p-12 rounded items-center justify-center"
                   />
                 </div>
               </div>
