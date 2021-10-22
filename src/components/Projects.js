@@ -40,7 +40,7 @@ export default function Projects() {
         </div> */}
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
-            <div className="grid mb-8 flex items-center bg-gray-50 shadow-xl rounded-lg ">
+            <div className="grid mb-8 flex items-center bg-gray-100 shadow-xl rounded-lg ">
               <div className="grid md:grid-cols-1 lg:grid-cols-2 ">
                 <div className="p-12 mr-4">
                   <p className="text-purple-800 my-4">{project.subtitle}</p>
@@ -49,7 +49,10 @@ export default function Projects() {
                   </p>
                   <p className="text-sm font-normal text-gray-900 my-4 text-left">
                     <ul>
-                      <li> </li>
+                      <li>
+                        - Analysing a user's requirement and define scope of
+                        work
+                      </li>
                       <li>
                         - Creating a flowchart diagram to visualize the process
                         of application.
