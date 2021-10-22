@@ -49,15 +49,15 @@ export default function Projects() {
                   </p>
                   <p className="text-sm font-normal text-gray-900 my-4 text-left">
                     <ul>
-                      <li>
-                        {" "}
-                        - Co-creation project with Accenture within 100 days.
-                      </li>
+                      <li> </li>
                       <li>
                         - Creating a flowchart diagram to visualize the process
                         of application.
                       </li>
-                      <li>- Designing 1st draft User Interface.</li>
+                      <li>
+                        - Designing User Experience / User Interface and
+                        Coordinate with Developer{" "}
+                      </li>
                       <li>- Supporting SIT / UAT test.</li>
                     </ul>
                   </p>
