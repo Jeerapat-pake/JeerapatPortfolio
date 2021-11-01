@@ -16,32 +16,44 @@ export const projects = [
   {
     title: "Asset Management System",
     subtitle: "UX/UI Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    description: [
+      "- Defining Business Requirement with Team.",
+      "- Designing and Prototyping UX / UI with Figma.",
+      "- Validating essential flow with users.",
+    ],
     image: "./Asset_Cover.png",
     link: "https://reactbootcamp.com",
   },
   {
     title: "Vehicle Management System",
     subtitle: "BA, UI designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    description: [
+      "- Creating Product backlog with Team.",
+      "- Creating a flowchart diagram to visualize the process of application.",
+      "- Designing and Prototyping UX / UI with Figma.",
+      "- Supporting SIT / UAT test.",
+    ],
     image: "./VMS_Cover.png",
     link: "https://reactbootcamp.com",
   },
   {
     title: "VPAY (RPA project)",
     subtitle: "UI Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    description: [
+      "- Designing and Prototyping UX/UI with Adobe XD.",
+      "- Creating test case document.",
+      "- Supporting SIT / UAT test.",
+    ],
     image: "./VPAY_Cover.png",
     link: "https://reactbootcamp.com",
   },
   {
     title: "Ruyi Website",
     subtitle: "Developer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    description: [
+      "- Developer a landing page of Ruyi Restaurant ",
+      "- Using HTML CSS JS for developing",
+    ],
     image: "./Ruyi_cover.png",
     link: "https://reactbootcamp.com",
   },

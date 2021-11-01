@@ -49,19 +49,9 @@ export default function Projects() {
                   </p>
                   <p className="text-sm font-normal text-gray-900 my-4 text-left">
                     <ul>
-                      <li>
-                        - Analysing a user's requirement and define scope of
-                        work
-                      </li>
-                      <li>
-                        - Creating a flowchart diagram to visualize the process
-                        of application.
-                      </li>
-                      <li>
-                        - Designing User Experience / User Interface and
-                        Coordinate with Developer{" "}
-                      </li>
-                      <li>- Supporting SIT / UAT test.</li>
+                      {project.description.map((desc) => (
+                        <li>{desc}</li>
+                      ))}
                     </ul>
                   </p>
                 </div>
