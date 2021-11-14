@@ -3,7 +3,11 @@ import { skills } from "../data";
 import { BadgeCheckIcon } from "@heroicons/react/solid";
 export default function Skills() {
   return (
-    <section id="skill " className="bg-gray-200 text-black pt-10">
+    <section
+      id="skill "
+      className=" text-black pt-10 "
+      style={{ backgroundColor: "#f4f7fa" }}
+    >
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-10">
           <BadgeCheckIcon className="mx-auto inline-block w-10 mb-4 text-purple-700" />
