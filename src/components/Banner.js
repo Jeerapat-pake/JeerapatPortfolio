@@ -32,11 +32,11 @@ export default function Banner() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 ">
           <img
-            className="object-cover object-center rounded hidden md:block"
+            className="object-cover object-center rounded hidden sm:block"
             alt="hero"
-            src="./coding.svg"
+            src="./myprofile.png"
           />
         </div>
       </div>

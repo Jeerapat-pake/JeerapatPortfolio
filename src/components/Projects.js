@@ -44,8 +44,11 @@ export default function Projects() {
               <div className="grid md:grid-cols-1 lg:grid-cols-2 ">
                 <div className="p-12 mr-4">
                   <p className="text-purple-800 my-4">{project.subtitle}</p>
-                  <p className="my-4 text-2xl font-semibold text-black">
+                  <p className=" text-2xl font-semibold text-black">
                     {project.title}
+                  </p>
+                  <p className="mb-2 text-gray-500 font-semibold">
+                    {project.jobdetail}
                   </p>
                   <p className="text-sm font-normal text-gray-900 my-4 text-left">
                     <ul>
@@ -59,7 +62,7 @@ export default function Projects() {
                   <img
                     src={project.image}
                     alt="project list"
-                    className="p-12 rounded items-center justify-center"
+                    className="p-12 rounded  items-center justify-center"
                   />
                 </div>
               </div>
