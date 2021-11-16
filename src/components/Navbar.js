@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { Link } from "react-scroll";
 
+export default Navbar;
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigation = [
+    { menu: "My Skills", href: "skills" },
+    { menu: "My Projects", href: "projects" },
+    { menu: "Contact", href: "contact" },
+  ];
+
   return (
     <div>
-      <nav className="bg-white shadow-md ">
+      <nav className="bg-white shadow-md fixed w-full">
         <div className="  px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -18,26 +27,33 @@ function Navbar() {
               </div>
               <div className="hidden lg:block ">
                 <div className="ml-10 flex items-baseline space-x-4 ">
-                  <a
-                    href="#skills"
+                  {navigation.map((item) => (
+                    <Link
+                      to={item.href}
+                      smooth={true}
+                      spy={true}
+                      className=" hover:bg-purple-500 text-gray-500 hover:text-white px-3 py-2 rounded-md  font-medium"
+                    >
+                      {item.menu}
+                    </Link>
+                  ))}
+
+                  {/* <Link
+                    to="projects"
+                    smooth={true}
+                    spy={true}
                     className=" hover:bg-purple-500 text-gray-500 hover:text-white px-3 py-2 rounded-md  font-medium"
                   >
-                    My Skills
-                  </a>
-
-                  <a
-                    href="#projects"
-                    className="text-gray-500 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md  font-medium"
-                  >
                     My Projects
-                  </a>
-
-                  <a
-                    href="#contact"
-                    className="text-gray-500 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md  font-medium"
+                  </Link>
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    spy={true}
+                    className=" hover:bg-purple-500 text-gray-500 hover:text-white px-3 py-2 rounded-md  font-medium"
                   >
-                    Contact Me
-                  </a>
+                    Contact
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -100,26 +116,16 @@ function Navbar() {
           {(ref) => (
             <div className="lg:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#skills"
-                  className="hover:bg-purple-500 text-gray-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  My skills
-                </a>
-
-                <a
-                  href="#projects"
-                  className="hover:bg-purple-500 text-gray-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  My Projects
-                </a>
-
-                <a
-                  href="#contact"
-                  className="hover:bg-purple-500 text-gray-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Contact Me
-                </a>
+                {navigation.map((item) => (
+                  <Link
+                    to={item.href}
+                    spy={true}
+                    smooth={true}
+                    className="hover:bg-purple-500 text-gray-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    {item.menu}
+                  </Link>
+                ))}
               </div>
             </div>
           )}
@@ -128,5 +134,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;

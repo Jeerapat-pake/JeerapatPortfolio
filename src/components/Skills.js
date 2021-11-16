@@ -4,7 +4,7 @@ import { BadgeCheckIcon } from "@heroicons/react/solid";
 export default function Skills() {
   return (
     <section
-      id="skill "
+      id="skills "
       className=" text-black pt-10 "
       style={{ backgroundColor: "#f4f7fa" }}
     >
