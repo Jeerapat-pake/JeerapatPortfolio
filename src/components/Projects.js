@@ -41,8 +41,8 @@ export default function Projects() {
         <div className="flex flex-wrap ">
           {projects.map((project) => (
             <div className="grid mb-8 flex items-center bg-gray-100 shadow-xl rounded-lg md:mx-4">
-              <div className="grid md:grid-cols-1 lg:grid-cols-2 ">
-                <div className="p-12 mr-4">
+              <div className="grid md:grid-cols-2 sm:flex-row-reverse">
+                <div className="p-12 ">
                   <p className="text-purple-800 my-4">{project.subtitle}</p>
                   <p className=" text-2xl font-semibold text-black">
                     {project.title}
@@ -58,11 +58,11 @@ export default function Projects() {
                     </ul>
                   </p>
                 </div>
-                <div className="bg-gradient-to-r from-purple-500 to-purple-800 m-0 rounded-r-lg flex">
+                <div className="bg-gradient-to-r from-purple-500 to-purple-800 m-0  flex rounded-r-lg">
                   <img
                     src={project.image}
                     alt="project list"
-                    className="p-12 rounded  items-center justify-center"
+                    className="p-10 rounded-lg  items-center justify-center "
                   />
                 </div>
               </div>
