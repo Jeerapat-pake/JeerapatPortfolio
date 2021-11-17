@@ -13,20 +13,23 @@ export default function Banner() {
           </h1>
           <p className="font-bold text-lg">Business Analyst and UI Designer</p>
           <p className="mb-8 leading-relaxed">
-            I am a Business Analyst, who collaborates closely with users, UX/UI
-            designer, and the developer team to clarify what is the business
-            solutions and the real user's needs
+            I currently work as a Business analyst, In my role, I frequently
+            collaborate with other business analysts and UX/UI Designers to
+            define user problems and what is the best solution for fixing them,
+            prepare functional and technical documents, coordinate with
+            developer to clarify the business flow, create SIT/UAT test script
+            to deliver the software product.
           </p>
           <div className="flex justify-center ">
             <a
               href="#contact"
-              className="inline-flex text-purple-500 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-purple-100 rounded text-lg"
+              className="inline-flex text-purple-500 bg-white border-0 py-2 px-4 focus:outline-none hover:bg-purple-100 rounded text-lg"
             >
               Work With Me
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex  bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 hover:text-white rounded text-lg"
+              className="ml-4 inline-flex  bg-gray-900 border-0 py-2 px-4 focus:outline-none hover:bg-gray-800 hover:text-white rounded text-lg"
             >
               See My Portfolio
             </a>

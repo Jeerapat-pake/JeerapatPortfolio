@@ -25,36 +25,19 @@ function Navbar() {
                   alt="Logo"
                 />
               </div>
-              <div className="hidden lg:block ">
-                <div className="ml-10 flex items-baseline space-x-4 ">
-                  {navigation.map((item) => (
-                    <Link
-                      to={item.href}
-                      smooth={true}
-                      spy={true}
-                      className=" hover:bg-purple-500 text-gray-500 hover:text-white px-3 py-2 rounded-md  font-medium"
-                    >
-                      {item.menu}
-                    </Link>
-                  ))}
-
-                  {/* <Link
-                    to="projects"
-                    smooth={true}
-                    spy={true}
-                    className=" hover:bg-purple-500 text-gray-500 hover:text-white px-3 py-2 rounded-md  font-medium"
-                  >
-                    My Projects
-                  </Link>
+            </div>
+            <div className="hidden lg:block ">
+              <div className="ml-10 flex items-baseline space-x-4 ">
+                {navigation.map((item) => (
                   <Link
-                    to="contact"
+                    to={item.href}
                     smooth={true}
                     spy={true}
                     className=" hover:bg-purple-500 text-gray-500 hover:text-white px-3 py-2 rounded-md  font-medium"
                   >
-                    Contact
-                  </Link> */}
-                </div>
+                    {item.menu}
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="-mr-2 flex lg:hidden">
