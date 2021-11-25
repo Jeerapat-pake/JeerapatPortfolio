@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <div>
-      <div className="bg-white shadow-md fixed w-full">
+      <div className="bg-white shadow-md fixed w-full z-50">
         <div className="  px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
