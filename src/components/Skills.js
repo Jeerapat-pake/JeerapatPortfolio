@@ -19,16 +19,20 @@ export default function Skills() {
         </div>
 
         {/* Skills Card */}
-        <div className="grid gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4 justify-center">
+        <div className="grid gap-8 mb-8 md:grid-cols-2 lg:grid-cols-4 justify-center">
           {skills.map((skill) => (
-            <div className="flex  p-4 dark:bg-gray-800  ">
-              <div className="justify-center p-3 mr-4 text-green-400 ">
-                <img alt="icon" className="w-12 h-12" src={skill.icon} />
+            <div className="flex ">
+              <div className="justify-center  mx-auto text-center bg-white filter drop-shadow-sm  rounded-md p-8">
+                <img
+                  alt="icon"
+                  className="w-12 h-12 mx-auto"
+                  src={skill.icon}
+                />
                 <div>
-                  <p className="my-3 text-xl font-semibold text-black">
+                  <p className="my-3 text-xl font-semibold text-purple-700 ">
                     {skill.title}
                   </p>
-                  <p className="text-sm font-normal text-gray-900">
+                  <p className="text-base font-normal text-gray-900">
                     {skill.description}
                   </p>
                 </div>

@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section id="projects" className="text-black  body-font pt-10">
       <div className="container px-5 py-10 mx-auto text-center lg:px-16">
-        <div className="flex flex-col w-full mb-20">
+        <div className="flex flex-col w-full mb-12">
           <CodeIcon className="mx-auto inline-block w-10 mb-4 text-purple-700" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-purple-700">
             Projects
