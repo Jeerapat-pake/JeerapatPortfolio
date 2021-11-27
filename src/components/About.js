@@ -8,7 +8,7 @@ export default function About() {
       className="bg-white text-gray-800 m-auto p-6 lg:py-0 lg:px-12"
       id="about"
     >
-      <div className="container ">
+      <div className="container mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="m-auto p-8">
             <img src="./about.png" alt=""></img>
